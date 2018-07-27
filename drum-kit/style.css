@@ -1,0 +1,46 @@
+:root {
+  --bg-color: black;
+  --main-color: white;
+  --key-color: gold;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--main-color);
+}
+
+header {
+  text-align: center;
+  font-size: 2rem;
+}
+
+#main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30vh;
+}
+
+.keys {
+  font-size: 30px;
+  border: 2px solid var(--key-color);
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.playing {
+  transform: scale(1.2);
+  color: var(--key-color);
+  font-weight: 800;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30vh;
+}

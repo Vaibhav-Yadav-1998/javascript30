@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drum Kit</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Drum Kit</h1>
+    </header>
+    <main id="main">
+        <div class="keys" data-key="65" title="press A">A</div>
+        <div class="keys" data-key="83" title="press S">S</div>
+        <div class="keys" data-key="68" title="press D">D</div>
+        <div class="keys" data-key="70" title="press F">F</div>
+        <div class="keys" data-key="74" title="press J">J</div>
+        <div class="keys" data-key="75" title="press K">K</div>
+        <div class="keys" data-key="76" title="press L">L</div>
+        <div class="keys" data-key="77" title="press M">M</div>
+        <div class="keys" data-key="32" title="press Space">Space</div>
+    </main>
+
+    <div id="sounds">
+        <audio src="./sounds/boom.wav" data-key="65"></audio>
+        <audio src="./sounds/clap.wav" data-key="83"></audio>
+        <audio src="./sounds//hihat.wav" data-key="68"></audio>
+        <audio src="./sounds/kick.wav" data-key="70"></audio>
+        <audio src="./sounds/openhat.wav" data-key="74"></audio>
+        <audio src="./sounds/ride.wav" data-key="75"></audio>
+        <audio src="./sounds/snare.wav" data-key="76"></audio>
+        <audio src="./sounds/tink.wav" data-key="77"></audio>
+        <audio src="./sounds/tom.wav" data-key="32"></audio>
+    </div>
+
+    <footer>
+        <h3>Made by Vaibhav Yadav</h3>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
