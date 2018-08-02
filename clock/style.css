@@ -1,0 +1,46 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#clock {
+  padding-top: 20px;
+}
+
+.circle {
+  position: relative;
+  transform: translateY(-3px);
+  border: 10px solid white;
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  margin: 10px auto;
+}
+
+.hands {
+  position: absolute;
+  top: 50%;
+  width: 47%;
+  left: 3%;
+  height: 5px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+}
+
+.hour-hand {
+  width: 35%;
+  left: 15%;
+}
