@@ -3,6 +3,8 @@ function Main() {
   const minuteHand = document.querySelector(".minute-hand");
   const hourHand = document.querySelector(".hour-hand");
 
+  const time = document.querySelector(".time");
+
   function Clock() {
     const d = new Date();
     const seconds = d.getSeconds();
@@ -22,6 +24,8 @@ function Main() {
       minuteHand.style.transitionDuration = "0s";
       hourHand.style.transitionDuration = "0s";
     }
+
+    time.innerText = d.toLocaleTimeString();
   }
 
   setInterval(Clock, 1000);
