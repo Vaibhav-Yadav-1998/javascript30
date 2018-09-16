@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image Editor</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Image Editor</h1>
+        </header>
+
+        <div id="controls">
+            <div>
+                <label for="spacing">Spacing</label>
+                <input type="range" name="spacing" id="spacing" min="10" max="200" value="10" data-suffix="px">
+            </div>
+
+            <div>
+                <label for="blur">Blur</label>
+                <input type="range" name="blur" id="blur" min="0" max="25" value="5" data-suffix="px">
+            </div>
+
+            <div>
+                <label for="base">Base</label>
+                <input type="color" name="base" id="base" value="#d3d3d3">
+            </div>
+        </div>
+
+        <div id="image-container">
+            <img src="https://source.unsplash.com/g5Uh7nP60FA/800x500">
+        </div>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+:root {
+  --spacing: 10px;
+  --blur: 5px;
+  --base: #d3d3d3;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+main {
+  text-align: center;
+}
+
+header {
+  color: var(--base);
+}
+
+#controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.1rem;
+}
+
+#controls div {
+  margin: 1rem;
+}
+
+#image-container {
+  padding: var(--spacing);
+  background-color: var(--base);
+  border: 5px solid var(--base);
+  border-radius: 10px;
+  max-width: 810px;
+  max-height: 510px;
+  margin: 20px auto;
+  filter: blur(var(--blur));
+}
